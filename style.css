@@ -11,7 +11,6 @@
     padding: 0;
     background: black;
     width: 100vw;
-    /* border-radius: 25px; */
 }
 
 .site-header .logo {
@@ -32,7 +31,7 @@
     padding: 10px;
 }
 
-.navbar ul {
+.site-nav ul {
     list-style: none;
     margin: 0;
     padding: 1rem;
@@ -41,8 +40,7 @@
     justify-content: flex-end;
 }
 
-
-.navbar a {
+.site-nav a {
     display: block;
     padding: 0.5rem 1rem;
     text-align: center;
@@ -62,27 +60,74 @@
 
 body {
     background-color: #fe4158;
-    text-align: center;
+    text-align: initial;
 }
 
 .website-content {
-    display: inline-block;                 /* box fits content width & height */
-    background-color: rgba(0, 0, 0, 0.5);  /* semi-transparent background */
+    display: block;                 
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
-    padding: 40px 60px;                    /* space around text */
-    margin: 100px auto;                    /* centers horizontally with top space */
-    text-align: center;
-    max-width: 130vh;
+    padding: 40px 60px;                    
+    margin: 60px auto;                   
+    text-align: initial;
+    max-width: 1100px;
     color: white;
 }
 
 
 .intro {
     font-size: 65px;
-    font-family: work-sans, sans-serif;
+    font-family: 'work-sans', sans-serif;
     text-align: center;
     margin: 0;
     color: white;
     opacity: 1;
     
 }
+
+.about-section {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.paragraph-data {
+    flex: 1 1 0;
+    text-align: left;
+}
+.skills {
+    flex: 1 1 0;
+    max-width: none;
+}
+
+.skills-title {
+    margin: 0 0 14px;
+    font-weight: 700;
+    color: #fff;                /* title on dark bg */
+}
+
+/* the grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 x N */
+    gap: 12px;                              /* space between cards */
+}
+
+/* skill “pills” / cards */
+.skill {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    user-select: none;
+}
+
+
