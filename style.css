@@ -72,7 +72,8 @@ body {
     padding: 40px 60px;                    /* space around text */
     margin: 100px auto;                    /* centers horizontally with top space */
     text-align: center;
-    max-width: 130vh
+    max-width: 130vh;
+    color: white;
 }
 
 
