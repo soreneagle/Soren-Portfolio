@@ -62,22 +62,26 @@
 
 body {
     background-color: #fe4158;
+    text-align: center;
 }
 
 .website-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;                 /* box fits content width & height */
+    background-color: rgba(0, 0, 0, 0.5);  /* semi-transparent background */
     border-radius: 10px;
-    margin-top: 20px;
+    padding: 40px 60px;                    /* space around text */
+    margin: 100px auto;                    /* centers horizontally with top space */
+    text-align: center;
+    max-width: 130vh
 }
 
+
 .intro {
-    font-size: 40px;
+    font-size: 65px;
     font-family: work-sans, sans-serif;
     text-align: center;
-    margin: 40px;
+    margin: 0;
     color: white;
     opacity: 1;
+    
 }
