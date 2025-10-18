@@ -48,6 +48,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .nameheader {
@@ -63,9 +64,20 @@ body {
     background-color: #fe4158;
 }
 
+.website-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 .intro {
     font-size: 40px;
+    font-family: work-sans, sans-serif;
     text-align: center;
     margin: 40px;
-    color: black;
+    color: white;
+    opacity: 1;
 }
