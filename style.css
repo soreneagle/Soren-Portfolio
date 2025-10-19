@@ -10,7 +10,12 @@
     align-items: center;
     padding: 0;
     background: black;
-    width: 100vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 95px;
+    z-index: 1000;
 }
 
 .site-header .logo {
@@ -59,8 +64,12 @@
 }
 
 body {
-    height: 200vh;
+    padding-top: 95px;
+    height: 400vh;
     background: linear-gradient(to bottom, #fe4158, #000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fe4158;
     text-align: initial;
 }
 
@@ -158,4 +167,40 @@ body {
     user-select: none;
 }
 
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 40vh;
+    align-items: top
+}
 
+.project-title {
+    display: flex;
+    margin: 0 0 14px;
+    font-weight: 700;
+    color: #fff;        
+    justify-content: center; 
+}
+
+/* the grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px;
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 14px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    user-select: none;
+}
